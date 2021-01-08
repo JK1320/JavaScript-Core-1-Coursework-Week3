@@ -25,4 +25,3 @@ var highTestScores = testScores.filter(isHighScore);
 
 console.log(highTestScores); // logs [90, 100, 81]
 ```
-//var pairsByIndex = pairsByIndexRaw.filter(elem => Array.isArray(elem) && elem.length === 2);

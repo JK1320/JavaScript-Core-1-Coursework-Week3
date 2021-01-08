@@ -2,6 +2,7 @@
 // Write multiple solutions using different syntax (as shown in the README)
 
 var numbers = [0.1, 0.2, 0.3, 0.4, 0.5];
+//solution 1
 /*
 function multiplyNum (number) {
 return number * 100;
@@ -10,12 +11,16 @@ return number * 100;
 let newArr = numbers.map(multiplyNum);
 console.log(newArr);
 */
+
+//solution 2
 /*
 let newArr = numbers.map(function multiplyNum (number) {
 return number * 100;
 });
 console.log(newArr);
 */
+
+//solution 3
 /*
 let newArr = numbers.map(number => {
 return number * 100;
@@ -23,5 +28,6 @@ return number * 100;
 console.log(newArr);
 */
 
+//solution 4
 let newArr = numbers.map(number => number * 100);
 console.log(newArr);

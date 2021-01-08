@@ -15,7 +15,9 @@
   
 */
 
-function colonisers() {}
+function colonisers(arr) {
+  return arr.filter(elem => elem.startsWith("A") && elem.endsWith("family"));
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

@@ -7,8 +7,8 @@
 */
 
 var pairsByIndex = [[0, 3], [1, 2], [2, 1], null, [3, 0]];
-function isNullValue(value){
-  return Boolean(value);
+function isNullValue(arr){
+  return arr.filter(elem => typeof elem === null);
   }
 
   if (pairsByIndex.some(isNullValue)) {

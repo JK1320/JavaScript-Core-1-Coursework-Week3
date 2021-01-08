@@ -9,19 +9,21 @@
 
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
-function isNotNumber (value) {
-  if (value % 3 === 0 && value % 5 === 0) {
-    console.log("FizzBuzz");
-  } else if (value % 5 === 0) {
-    console.log("Buzz");
-  } else if (value % 3 === 0) {
-    console.log("Fizz");
-  } else {
-    console.log(value);
+arr.forEach(value => {
+  switch (true) {
+      case (value % 3 === 0 && value % 5 === 0):
+      console.log("FizzBuzz")
+    break;
+      case (value % 3 === 0):
+      console.log("Fizz")
+    break;
+      case (value % 5 === 0):
+      console.log("Buzz");
+    break;
+      default: 
+      console.log(value)
   }
-}
-
-arr.forEach(isNotNumber);
+});
 
 /* EXPECTED OUTPUT */
 
